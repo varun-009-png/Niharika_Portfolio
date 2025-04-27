@@ -21,7 +21,7 @@ a {
 
 h2 {
   font-size: 2.5rem;
-  color: #8B5E3C; /* Brown Title */
+  color: #A0522D; /* Rustic Brown Title */
   text-align: center;
   margin-bottom: 40px;
 }
@@ -50,7 +50,7 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #8B5E3C; /* Brown */
+  color: #A0522D; /* Rustic Brown */
 }
 
 .menu-toggle {
@@ -77,14 +77,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #8B5E3C; /* Brown hover */
+  background: #A0522D; /* Rustic hover */
   color: white;
 }
 
 /* ===== Hero Section ===== */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #C19A6B, #8B5E3C); /* Warm brown gradient */
+  background: linear-gradient(135deg, #D2691E, #A0522D); /* Warm rustic brown gradient */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +118,7 @@ nav ul li a:hover {
 }
 
 .hero .buttons a {
-  background: #8B5E3C; /* Brown buttons */
+  background: #A0522D;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
@@ -239,7 +239,7 @@ section {
 .timeline-item {
   background: #f9f9f9;
   padding: 20px;
-  border-left: 4px solid #8B5E3C;
+  border-left: 4px solid #A0522D; /* Rustic line */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: left;
@@ -263,7 +263,7 @@ section {
 }
 
 .contact-links a {
-  background: #8B5E3C;
+  background: #A0522D;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
