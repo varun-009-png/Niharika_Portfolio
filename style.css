@@ -1,0 +1,318 @@
+/* ===== General Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #333;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #000DFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ===== Navbar ===== */
+nav {
+  width: 100%;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000DFF;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a {
+  font-weight: bold;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #000DFF;
+  color: #fff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #6B73FF, #000DFF);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 10px 0 30px;
+  font-size: 1.1rem;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero .buttons a {
+  background: white;
+  color: #000DFF;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero .buttons a:hover {
+  background: #eeeeee;
+}
+
+/* ===== Sections Common ===== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ===== About Section ===== */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+/* ===== Skills Section ===== */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item i, 
+.skill-item img {
+  font-size: 40px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* ===== Certifications Section ===== */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cert-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.cert-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.cert-card p {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== Timeline Sections (Education, Experience, Projects) ===== */
+.timeline {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.timeline-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #000DFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+  transition: 0.3s;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== Contact Section ===== */
+.contact-details {
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-links a {
+  background: #000DFF;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background: #6B73FF;
+}
+
+/* ===== Responsive Media Queries ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    display: block;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .skill-grid, .cert-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-grid, .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
