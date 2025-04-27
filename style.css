@@ -221,10 +221,10 @@ nav ul li a:hover {
 }
 
 .cert-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
+  max-height: 100px;
+  width: auto;
   margin-bottom: 15px;
+  object-fit: contain;
 }
 
 .cert-card p {
@@ -266,6 +266,7 @@ nav ul li a:hover {
 /* ===== Contact Section ===== */
 .contact-details {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .contact-links {
@@ -285,6 +286,18 @@ nav ul li a:hover {
 
 .contact-links a:hover {
   background: #5C4033;
+}
+
+/* ===== Typing Effect and Blinking Cursor ===== */
+#cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
 
 /* ===== Responsive Design ===== */
@@ -327,15 +340,4 @@ nav ul li a:hover {
   .skill-grid, .cert-grid {
     grid-template-columns: 1fr;
   }
-}
-
-#cursor {
-  display: inline-block;
-  margin-left: 2px;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  50.01%, 100% { opacity: 0; }
 }
