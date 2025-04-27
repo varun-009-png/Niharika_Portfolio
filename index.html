@@ -40,7 +40,7 @@
 <!-- Hero Section -->
 <section class="hero" id="hero">
   <img src="images/image.jpeg" alt="Niharika Mysore Prakasha">
-  <h1>Hi, I'm Niharika Mysore Prakasha</h1>
+  <h1 id="typing-text"><span id="cursor">|</span></h1>
   <p>Software Engineer | Data Enthusiast | Cloud Practitioner</p>
 
   <div class="buttons">
@@ -205,6 +205,35 @@ window.addEventListener('beforeunload', function () {
   window.scrollTo(0, 0);
 });
 </script>
+
+<script>
+  const text = "Hi, I'm Niharika Mysore Prakasha";
+  let index = 0;
+  const speed = 100; // typing speed
+  const delayAfterTyping = 15000; // 15 seconds delay after typing completes
+  
+  function typeWriter() {
+    if (index < text.length) {
+      document.getElementById("typing-text").innerHTML = text.substring(0, index + 1) + '<span id="cursor">|</span>';
+      index++;
+      setTimeout(typeWriter, speed);
+    } else {
+      setTimeout(resetTyping, delayAfterTyping);
+    }
+  }
+  
+  function resetTyping() {
+    index = 0;
+    document.getElementById("typing-text").innerHTML = '<span id="cursor">|</span>';
+    typeWriter();
+  }
+  
+  window.onload = function() {
+    typeWriter();
+  };
+  </script>
+  
+  
 
 </body>
 </html>
