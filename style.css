@@ -8,7 +8,7 @@
 /* ===== Body ===== */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #ffffff;
+  background: #FAF3E0; /* Light cream */
   color: #333;
   scroll-behavior: smooth;
   line-height: 1.6;
@@ -21,7 +21,7 @@ a {
 
 h2 {
   font-size: 2.5rem;
-  color: #000DFF;
+  color: #8B5E3C; /* Brown Title */
   text-align: center;
   margin-bottom: 40px;
 }
@@ -29,7 +29,7 @@ h2 {
 /* ===== Navbar ===== */
 nav {
   width: 100%;
-  background: #fff;
+  background: #FAF3E0; /* Same as body */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -50,7 +50,7 @@ nav {
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
-  color: #000DFF;
+  color: #8B5E3C; /* Brown */
 }
 
 .menu-toggle {
@@ -77,14 +77,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background: #000DFF;
-  color: #fff;
+  background: #8B5E3C; /* Brown hover */
+  color: white;
 }
 
 /* ===== Hero Section ===== */
 .hero {
   height: 100vh;
-  background: linear-gradient(135deg, #6B73FF, #000DFF);
+  background: linear-gradient(135deg, #C19A6B, #8B5E3C); /* Warm brown gradient */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,8 +118,8 @@ nav ul li a:hover {
 }
 
 .hero .buttons a {
-  background: white;
-  color: #000DFF;
+  background: #8B5E3C; /* Brown buttons */
+  color: white;
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: bold;
@@ -127,7 +127,7 @@ nav ul li a:hover {
 }
 
 .hero .buttons a:hover {
-  background: #eeeeee;
+  background: #5C4033; /* Darker brown */
 }
 
 /* ===== Sections Common ===== */
@@ -227,7 +227,7 @@ section {
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* ===== Timeline Sections (Education, Experience, Projects) ===== */
+/* ===== Timeline Sections ===== */
 .timeline {
   max-width: 1000px;
   margin: auto;
@@ -239,7 +239,7 @@ section {
 .timeline-item {
   background: #f9f9f9;
   padding: 20px;
-  border-left: 4px solid #000DFF;
+  border-left: 4px solid #8B5E3C;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   text-align: left;
@@ -263,7 +263,7 @@ section {
 }
 
 .contact-links a {
-  background: #000DFF;
+  background: #8B5E3C;
   color: white;
   padding: 12px 25px;
   border-radius: 25px;
@@ -272,7 +272,7 @@ section {
 }
 
 .contact-links a:hover {
-  background: #6B73FF;
+  background: #5C4033;
 }
 
 /* ===== Responsive Media Queries ===== */
@@ -285,7 +285,7 @@ section {
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    background: #FAF3E0;
     flex-direction: column;
     align-items: center;
     display: none;
