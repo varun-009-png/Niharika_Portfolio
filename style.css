@@ -23,7 +23,6 @@ h2 {
   font-size: 2.5rem;
   color: #8B5E3C;
   text-align: center;
-  margin-top: 80px;
   margin-bottom: 40px;
 }
 
@@ -343,36 +342,24 @@ nav ul li a:hover {
   }
 }
 
-
-/* ===== Custom Bullet Styling for Experience Entries ===== */
-.custom-bullets {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+/* ===== Fix for Timeline Word Wrapping ===== */
+.timeline-item p, .timeline-item li {
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
-.custom-bullets li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  margin-bottom: 10px;
-}
+/* ===== Enhanced Mobile Styling for Timeline ===== */
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 20px 15px;
+  }
 
-.custom-bullets li i {
-  color: #8B5E3C;
-  font-size: 1rem;
-  margin-top: 3px;
-}
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
 
-
-/* ===== Publication Link Styling ===== */
-.publication-link {
-  color: #1a73e8;
-  text-decoration: underline;
-  font-weight: 500;
-}
-
-.publication-link:hover {
-  color: #0c47a1;
-  text-decoration: none;
+  .timeline-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
