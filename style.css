@@ -363,3 +363,80 @@ nav ul li a:hover {
     line-height: 1.5;
   }
 }
+
+/* ===== Custom Bullets in Experience Section ===== */
+.custom-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-bullets li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.custom-bullets li i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #8B5E3C;
+  font-size: 18px;
+}
+
+
+section h2 {
+  margin-top: 40px;
+}
+
+
+/* ===== Enhanced Mobile Styling for Timeline ===== */
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 20px 15px;
+  }
+
+  .timeline-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* ===== Section Spacing Fix ===== */
+section {
+  margin-bottom: 80px;
+}
+
+/* ===== Make Timeline Images Responsive ===== */
+.timeline-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== Fix for Link Overflow on Small Screens ===== */
+a {
+  word-break: break-word;
+}
+
+/* ===== Extra Mobile Responsiveness ===== */
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+    height: auto;
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+}
+
