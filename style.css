@@ -440,3 +440,37 @@ a {
   }
 }
 
+.education-grid .cert-card {
+  height: auto;
+}
+
+.education-grid .cert-card p {
+  max-width: 95%;
+  margin: 0 auto 10px;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.edu-logo {
+  max-height: 100px;
+  margin-bottom: 15px;
+}
+
+.project-grid .cert-card {
+  height: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
